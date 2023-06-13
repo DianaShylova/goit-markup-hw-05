@@ -440,7 +440,7 @@ border-radius: 0px 0px 4px 4px;
     box-shadow: none;
     color: var(--brand-bright-color);
     background: var(--light-bg);
-    border: 1px solid #E7E9FC;
+    border-color: #E7E9FC;
     border-radius: 4px;
     cursor: pointer;
     transition: transition color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -453,7 +453,7 @@ border-radius: 0px 0px 4px 4px;
 .filter-btn:focus{
     color: #FFFFFF;
     background-color: var(--focus-btn-color);
-    border: 1px solid transparent;
+    border-color: transparent;
     
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -621,7 +621,7 @@ border-radius: 0px 0px 4px 4px;
     min-height: 584px;
 
     
-    background: var(--light-bg);
+    background: #fcfcfc;
     border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -648,23 +648,25 @@ border-radius: 0px 0px 4px 4px;
 
     background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
-
+    color: var(--brand-color);
     border-radius: 50%;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn-close:hover,
 .modal-btn-close:focus{
+    color: var(--body-color);
     background-color: var(--focus-btn-color);
     border: none;
+    /*fill: var(--body-color);*/
 }
 .modal-btn-icon{
-    fill: var(--brand-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: currentColor;
+   /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 
 }
-.modal-btn-icon:hover,
+/*.modal-btn-icon:hover,
 .modal-btn-icon:focus{
-    fill: var(--body-color);
+    fill: var(--body-color);*/
 }
