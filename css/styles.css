@@ -163,7 +163,7 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
     
-    color: var(--brand-color);
+    color: #404bbf; /*var(--brand-color);*/
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /*transition: color var(--anim);*/
 }
@@ -443,7 +443,7 @@ border-radius: 0px 0px 4px 4px;
     border-color: #E7E9FC;
     border-radius: 4px;
     cursor: pointer;
-    transition: transition color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -651,7 +651,7 @@ border-radius: 0px 0px 4px 4px;
     color: var(--brand-color);
     border-radius: 50%;
     cursor: pointer;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn-close:hover,
@@ -663,10 +663,10 @@ border-radius: 0px 0px 4px 4px;
 }
 .modal-btn-icon{
     fill: currentColor;
-   /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-/*.modal-btn-icon:hover,
+.modal-btn-icon:hover,
 .modal-btn-icon:focus{
-    fill: var(--body-color);*/
+    fill: var(--body-color);
 }
